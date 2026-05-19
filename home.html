@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swift Bite</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Swift Bite">
+            <span>Swift Bite</span>
+        </div>
+
+        <div class="nav-right">
+            <span id="user-name"></span>
+            <a href="cart-items"></a>
+            <img class="cart" src="shopping-cart.png" alt="">
+            <button onclick="logout">Logout</button>
+        </div>
+    </header>
+
+    <section class="ray">
+        <h1>Food delivered fast</h1>
+            <p>Order your favourite meals anytime</p>
+    </section>
+
+    <h2 class="section-title">Categories</h2>
+    <div class="auta">
+        <div class="peel">Meals</div>
+        <div class="peel">Fast Food</div>
+        <div class="peel">Drinks</div>
+        <div class="peel">Desserts</div>
+    </div>
+
+    <h2 class="section-title">Meals</h2>
+    <div class="food-grid">
+         
+        <div class="food">
+            <img src="jollof.png" alt="">
+            <h3>Jollof Rice + Chicken</h3>
+            <p>₦2,500</p>
+            <button onclick="addToCart('Jollof Rice + Chicken', 2500)">Add</button>
+        </div>
+
+    <div class="food">
+        <img src="fried.png" alt="" srcset="">
+        <h3>Fried Rice + Chicken</h3>
+        <p>₦3,000</p>
+<button onclick="addToCart('Fried Rice + Chicken', 3000)">Add</button> 
+ </div>
+
+ <div class="food">
+    <img src="semo.png" alt="">
+    <h3>Semo + Egusi</h3>
+    <p>₦2,000</p>
+    <button onclick="addToCart('Semo +Egusi', 2000)">Add</button>
+ </div>
+</div>
+
+<h2 class="section-title">Fast Food</h2>
+<div class="food-grid">
+
+    <div class="food">
+        <img src="burger.png" alt="">
+        <h3>Burger</h3>
+        <p>₦1,500</p>
+        <button onclick="addToCart('Burger',1500)">Add</button>
+    </div>
+
+    <div class="food">
+        <img src="shawarma.png" alt="">
+        <h3>Shawarma</h3>
+        <p>₦3,500</p>
+        <button onclick="addToCart('Shawarma', 3500)">Add</button>
+    </div>
+
+    <div class="food">
+        <img src="pizza.png" alt="">
+        <h3>Pizza</h3>
+        <p>₦5,000</p>
+        <button onclick="addToCart('Pizza',5000)">Add</button>
+     </div>
+   </div>
+
+<h2 class="section-title">Drinks</h2>
+<div class="food-grid">
+
+    <div class="food">
+        <img src="coke.png" alt="">
+        <h3>Coke</h3>
+        <p>₦800</p>
+        <button onclick="addToCart('Coke', 200)">Add</button>
+    </div>
+
+    <div class="food">
+        <img src="fanta.png" alt="">
+        <h3>Fanta</h3>
+        <p>₦500</p>
+        <button onclick="addToCart('Fanta', 200)">Add</button>
+    </div>
+
+    <div class="food">
+        <img src="sprite.png" alt="">
+        <h3>Sprite</h3>
+        <p>₦700</p>
+        <button onclick="addToCart('Sprite', 200)">Add</button>
+     </div>
+
+     <div class="food">
+        <img src="malt.png" alt="">
+        <h3>Malt</h3>
+        <p>₦1,000</p>
+        <button onclick="addToCart('Coke', 800)">Add</button>
+     </div>
+   </div>
+
+<h2 class="section-title">Desserts</h2>
+<div class="food-grid">
+
+    <div class="food">
+        <img src="ice.png" alt="">
+        <h3>Ice Cream</h3>
+        <p>₦2,000</p>
+        <button onclick="addToCart('Ice Cream', 2000)">Add</button>
+    </div>
+
+    <div class="food">
+        <img src="cake.png" alt="">
+        <h3>Cake</h3>
+        <p>₦3,000</p>
+        <button onclick="addToCart('Cake', 3000)">Add</button>
+    </div>
+
+  </div>
+
+
+    <script src="home.js"></script>
+    <script>checkAuth();</script>
+
+    <div class="bottom-nav">
+    <a href="home.html">Home</a>
+    <a href="cart.html">Cart</a>
+    <a href="checkout.html">Checkout</a>
+
+  </div>
+
+</body>
+</html>
