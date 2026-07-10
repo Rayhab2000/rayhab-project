@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swift Bite</title>
+    <meta name="description" content="Swift Bite offers fast delivery of meals, fast food, drinks, and desserts online.">
+    <meta name="keywords" content="food delivery, fast food, meals, drinks, desserts, online ordering">
+    <meta name="author" content="Swift Bite">
+    <title>Swift Bite | Fast Food & Meal Delivery</title>
     <link rel="stylesheet" href="home.css">
 </head>
 <body>
@@ -11,141 +14,138 @@
     <header class="navbar">
         <div class="logo">
             <img src="logo.png" alt="Swift Bite">
-            <span>Swift Bite</span>
+            
         </div>
 
         <div class="nav-right">
             <span id="user-name"></span>
-            <a href="cart-items"></a>
-            <img class="cart" src="shopping-cart.png" alt="">
-            <button onclick="logout">Logout</button>
+            <a href="cart.html" id="cart-count" aria-label="Go to cart">0</a>
+            <a href="cart.html" aria-label="Go to cart">
+                <img class="cart" src="shopping-cart.png" alt="Cart">
+            </a>
+            <button class="logout btn" onclick="logout()">Logout</button>
         </div>
     </header>
 
     <section class="ray">
         <h1>Food delivered fast</h1>
-            <p>Order your favourite meals anytime</p>
+            <p class="rayhab">Order your favourite meals anytime</p>
     </section>
 
     <h2 class="section-title">Categories</h2>
-    <div class="auta">
-        <div class="peel">Meals</div>
-        <div class="peel">Fast Food</div>
-        <div class="peel">Drinks</div>
-        <div class="peel">Desserts</div>
+    <div class="categories">
+        <button class="peel" onclick="showCategory('meals', this)">Meals</button>
+        <button class="peel"  onclick="showCategory('fastfood', this)">Fast Food</button>
+        <button class="peel" onclick="showCategory('drinks', this)">Drinks</button>
+        <button class="peel" onclick="showCategory('desserts', this)">Desserts</button>
     </div>
 
     <h2 class="section-title">Meals</h2>
     <div class="food-grid">
          
-        <div class="food">
+        <div class="food meals">
             <img src="jollof.png" alt="">
             <h3>Jollof Rice + Chicken</h3>
-            <p>₦2,500</p>
-            <button onclick="addToCart('Jollof Rice + Chicken', 2500)">Add</button>
+            <p>₦4,500</p>
+            <button onclick="addToCart('Jollof Rice + Chicken', 4500)">addToCart</button>
         </div>
 
-    <div class="food">
-        <img src="fried.png" alt="" srcset="">
+    <div class="food meals">
+        <img src="fried.png" alt="">
         <h3>Fried Rice + Chicken</h3>
-        <p>₦3,000</p>
-<button onclick="addToCart('Fried Rice + Chicken', 3000)">Add</button> 
+        <p>₦5,000</p>
+<button onclick="addToCart('Fried Rice + Chicken', 5000)">addToCart</button>
  </div>
 
- <div class="food">
+ <div class="food meals">
     <img src="semo.png" alt="">
     <h3>Semo + Egusi</h3>
-    <p>₦2,000</p>
-    <button onclick="addToCart('Semo +Egusi', 2000)">Add</button>
+    <p>₦4,000</p>
+    <button onclick="addToCart('Semo +Egusi', 4000)">addToCart</button>
  </div>
 </div>
 
 <h2 class="section-title">Fast Food</h2>
 <div class="food-grid">
 
-    <div class="food">
+    <div class="food fastfood">
         <img src="burger.png" alt="">
         <h3>Burger</h3>
-        <p>₦1,500</p>
-        <button onclick="addToCart('Burger',1500)">Add</button>
+        <p>₦6,500</p>
+        <button onclick="addToCart('Burger',6500)">addToCart</button>
     </div>
 
-    <div class="food">
+    <div class="food fastfood">
         <img src="shawarma.png" alt="">
         <h3>Shawarma</h3>
-        <p>₦3,500</p>
-        <button onclick="addToCart('Shawarma', 3500)">Add</button>
+        <p>₦4,500</p>
+        <button onclick="addToCart('Shawarma', 4500)">addToCart</button>
     </div>
 
-    <div class="food">
+    <div class="food fastfood">
         <img src="pizza.png" alt="">
         <h3>Pizza</h3>
-        <p>₦5,000</p>
-        <button onclick="addToCart('Pizza',5000)">Add</button>
+        <p>₦12,000</p>
+        <button onclick="addToCart('Pizza',12000)">addToCart</button>
      </div>
    </div>
 
 <h2 class="section-title">Drinks</h2>
 <div class="food-grid">
 
-    <div class="food">
-        <img src="coke.png" alt="">
+    <div class="food drinks">
+        <img src="coke.png" alt="" width="60%">
         <h3>Coke</h3>
         <p>₦800</p>
-        <button onclick="addToCart('Coke', 200)">Add</button>
+        <button onclick="addToCart('Coke', 800)">addToCart</button>
     </div>
 
-    <div class="food">
+    <div class="food drinks">
         <img src="fanta.png" alt="">
         <h3>Fanta</h3>
         <p>₦500</p>
-        <button onclick="addToCart('Fanta', 200)">Add</button>
+        <button onclick="addToCart('Fanta', 500)">addToCart</button>
     </div>
 
-    <div class="food">
+    <div class="food drinks">
         <img src="sprite.png" alt="">
         <h3>Sprite</h3>
         <p>₦700</p>
-        <button onclick="addToCart('Sprite', 200)">Add</button>
+        <button onclick="addToCart('Sprite', 700)">addToCart</button>
      </div>
 
-     <div class="food">
+     <div class="food drinks">
         <img src="malt.png" alt="">
         <h3>Malt</h3>
         <p>₦1,000</p>
-        <button onclick="addToCart('Coke', 800)">Add</button>
+        <button onclick="addToCart('Malt', 1000)">addToCart</button>
      </div>
    </div>
 
 <h2 class="section-title">Desserts</h2>
 <div class="food-grid">
 
-    <div class="food">
+    <div class="food desserts">
         <img src="ice.png" alt="">
         <h3>Ice Cream</h3>
-        <p>₦2,000</p>
-        <button onclick="addToCart('Ice Cream', 2000)">Add</button>
+        <p>₦5,000</p>
+        <button onclick="addToCart('Ice Cream', 5000)">addToCart</button>
     </div>
 
-    <div class="food">
+    <div class="food desserts">
         <img src="cake.png" alt="">
         <h3>Cake</h3>
-        <p>₦3,000</p>
-        <button onclick="addToCart('Cake', 3000)">Add</button>
+        <p>₦25,000</p>
+        <button onclick="addToCart('Cake', 25000)">addToCart</button>
     </div>
 
-  </div>
+  <div>
 
+    <a href="checkout.html"><button class="checkout-btn">Checkout</button></a>
+ 
 
-    <script src="home.js"></script>
-    <script>checkAuth();</script>
-
-    <div class="bottom-nav">
-    <a href="home.html">Home</a>
-    <a href="cart.html">Cart</a>
-    <a href="checkout.html">Checkout</a>
-
-  </div>
+    
 
 </body>
+<script src="home.js"></script>
 </html>
